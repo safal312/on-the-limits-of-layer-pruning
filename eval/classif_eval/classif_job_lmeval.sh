@@ -17,7 +17,7 @@
 export HF_ALLOW_CODE_EVAL="1"
 
 
-model_name="/scratch/ss13750/nnsight/lm-eval-scripts/merged_models/merged_mistral_new8iter_dolci_mistral_checkpoint11250"
+model_name="/scratch/id/nnsight/lm-eval-scripts/merged_models/merged_mistral_new8iter_dolci_mistral_checkpoint11250"
 
 # Adapter path (Leave empty to run base model only)
 adapter_path=""

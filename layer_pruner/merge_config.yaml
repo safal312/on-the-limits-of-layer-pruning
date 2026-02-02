@@ -1,0 +1,21 @@
+# Configuration for model layer removal experiment
+
+# Layers to remove from the model
+# layers_to_remove: [4,5,11,12,17,20,24]
+# layers_to_remove: [3,8,19,21,22,25,26,27]
+
+# layers_to_remove: [26, 25, 24, 27, 23, 22, 28, 21]
+# layers_to_remove: [24,23,2,20,21,11]
+# layers_to_remove: [2,23,24]
+layers_to_remove: [30,31]
+
+
+# Model name from HuggingFace
+# model_name: "meta-llama/Llama-3.1-8B-Instruct"
+# model_name: "Qwen/Qwen2.5-7B-Instruct"
+model_name: "mistralai/Mistral-7B-Instruct-v0.3"
+# model_name: "Qwen/Qwen3-8B"
+# model_name: "allenai/OLMo-2-1124-7B-Instruct"
+# model_name: "deepseek-ai/deepseek-math-7b-instruct"
+# model_name: "google/gemma-2-2b-it"
+# model_name: "meta-llama/Llama-2-7b-hf"

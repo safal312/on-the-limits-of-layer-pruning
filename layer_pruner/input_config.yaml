@@ -1,0 +1,54 @@
+# Configuration for model layer removal experiment
+
+algo_iterations: 8
+# Layers to remove from the model - empty to find least important layer
+layers_to_remove: []
+
+# Model name from HuggingFace or local path
+# model_name: "/scratch/ss13750/nnsight/out_models/Qwen7B_iterated_22_layers_finetuned/checkpoint-3736"
+# model_name: "Qwen/Qwen2.5-7B-Instruct"
+# model_name: "mistralai/Mistral-7B-Instruct-v0.3"
+# model_name: "mistralai/Mistral-7B-v0.3"
+# model_name: "Qwen/Qwen3-8B"
+# model_name: "allenai/OLMo-2-1124-7B-Instruct"
+# model_name: "deepseek-ai/deepseek-math-7b-instruct"
+# model_name: "meta-llama/Llama-3.1-8B-Instruct"
+# model_name: "hkust-nlp/DeepSeek-Math-7B-SimpleRL-Zoo"
+# model_name: "allenai/Olmo-3-7B-Instruct"
+# model_name: "allenai/OLMo-2-1124-7B-Instruct"
+model_name: "deepseek-ai/deepseek-llm-7b-chat"
+
+# Number of evaluation samples
+eval_samples: 100
+
+# Whether to iterate through all layers
+iterate: true
+
+# Prompt variable name from utils.prompts
+# prompt: "QWEN_INSTRUCT"
+# prompt: "QWEN_CODE_PROMPT"
+# prompt: "BASE_PROMPT"
+# prompt: "OLMO_INSTRUCT"
+# prompt: "QWEN3_NOTHINK"
+# prompt: "DMATH_PROMPT"
+# prompt: "LLAMA_PROMPT"
+# prompt: "SIMPLERL_COMPLEX"
+# prompt: "OLMO3_INSTRUCT"
+# prompt: "QWEN_HUMEVAL_PROMPT"
+# prompt: "LLAMA_HUMEVAL_PROMPT"
+# prompt: "MISTRAL_INSTRUCT"
+# For multiple datasets, specify prompts in same order (comma-separated):
+# prompt: "QWEN_INSTRUCT,DMATH_PROMPT"  # first for gsm8k, second for math
+# prompt: "MISTRAL_INSTRUCT_CODE"
+# prompt: "QWEN_INSTRUCT,QWEN_HUMEVAL_PROMPT,QWEN_XSUM"
+# prompt: "LLAMA_PROMPT,LLAMA_HUMEVAL_PROMPT,LLAMA_XSUM"
+# prompt: "MISTRAL_INSTRUCT,MISTRAL_INSTRUCT_CODE"
+# prompt: "MISTRAL_XSUM"
+# prompt: "OLMO2_INSTRUCT,OLMO2_HUMEVAL,OLMO2_XSUM"
+prompt: "DEEPSEEK_INSTRUCT,DEEPSEEK_HUMEVAL,DEEPSEEK_XSUM"
+
+# dataset: "humeval"
+# For multiple datasets (will be averaged using normalized metric):
+dataset: "gsm8k,humeval,xsum"
+merged_model_path: "./merged_llama_code"
+overwrite: False
