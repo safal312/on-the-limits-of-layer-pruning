@@ -50,7 +50,7 @@ This repository contains the implementation for **On the Limits of Layer Pruning
 
 ### Core Dependencies
 
-This project leverages several key open-source libraries:
+This project leverages several key open-source libraries which you will have to install as well depending on your needs:
 - **[lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness)**: Used for standardized evaluation of pruned models.
 - **[mergekit](https://github.com/arcee-ai/mergekit)**: Used for the underlying layer removal and model merging logic.
 - **[nnsight](https://nnsight.net/)**: Used for deep analysis and visualization of model internals.
@@ -61,5 +61,13 @@ This project leverages several key open-source libraries:
 If you find this work useful in your research, please cite:
 
 ```bibtex
-
+@misc{shrestha2026limitslayerpruninggenerative,
+      title={On the Limits of Layer Pruning for Generative Reasoning in LLMs}, 
+      author={Safal Shrestha and Anubhav Shrestha and Aadim Nepal and Minwu Kim and Keith Ross},
+      year={2026},
+      eprint={2602.01997},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2602.01997}, 
+}
 ```
